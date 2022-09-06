@@ -68,7 +68,7 @@ function wide(strDate){
         break;
 
     case '03':
-        mes = ' de março de ';
+        mes = '  de março de ';
         break;
         
     case '04':
