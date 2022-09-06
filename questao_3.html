@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+</head>
+<body>
+    <script>
+      alert("escreva a data neste formato xx/xx/xxxx")
+      var data = prompt("digite a data atual") ;
+        var t = data.split("/");
+    
+       switch(t[1]){
+        case '01':
+            var mes = 'Janeiro';
+            break;
+
+        case '02':
+        var mes = 'fevereiro';
+            break;
+
+        case '03':
+        var mes = 'março';
+            break;
+            
+        case '04':
+        var mes = 'abril';
+            break;
+        case '05':
+        var mes = 'maio';
+            break;
+        case '06':
+            var mes = 'junho';
+            break;
+        case '07':
+            var mes = 'julho';
+            break;
+        case '08':
+            var mes = 'agosto';
+            break;
+        case '09':
+            var mes = 'setembro';
+            break;
+        case '10':
+            var mes = 'outubro';
+            break;
+         case '11':
+            var mes = 'novembro';
+            break;
+        case '12':
+            var mes = 'dezembro';
+            break;
+            default:
+
+
+    
+        
+       }
+       document.write(`${t[0]} de ${mes} de ${t[2]}`);
+          </script>
+</body>
+</html>
