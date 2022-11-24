@@ -53,61 +53,33 @@ function isApproved(mean){
  * @param {*} strDate : Uma string no formato de data
  * @returns Uma descrição da data informada
  */
-function wide(strDate){
+ function wide(strDate){
 
-    var t = strDate.split("/");
-    var mes = t[1];
+    // TODO
+    // 3) Faça um script que receba uma data no formato “dd/mm/aaaa” e escreva a data por extenso,
+    // por exemplo, de "03/03/2022" para "03 de março de 2022". Dica: use a função
+    // “split” de uma string que quebra a string em pedaços dado um separador como argumento da função.
+    // Nesse caso, o separador é a barra (/) da data.
+    const [day, month, year] = strDate.split("/")
 
-    switch(mes){
-    case '01':
-        mes = ' de Janeiro de ';
-        break;
-
-    case '02':
-        mes = ' de fevereiro de ';
-        break;
-
-    case '03':
-        mes = '  de março de ';
-        break;
-        
-    case '04':
-        mes = ' de abril de ';
-        break;
-    case '05':
-        mes = ' de maio de ';
-        break;
-    case '06':
-        mes = ' de junho de';
-        break;
-    case '07':
-        mes = ' de julho de ';
-        break;
-    case '08':
-        mes = ' de agosto de ';
-        break;
-    case '09':
-        mes = ' de setembro de ';
-        break;
-    case '10':
-        mes = ' de outubro de ';
-        break;
-        case '11':
-        mes = 'de novembro de ';
-        break;
-    case '12':
-        mes = ' de dezembro de ';
-        break;
-        default:
-
+    const monthText = {
+        "01": "janeiro",
+        "02": "fevereiro",
+        "03": "março",
+        "04": "abril",
+        "05": "maio",
+        "06": "junho",
+        "07": "julho",
+        "08": "agosto",
+        "09": "setembro",
+        "10": "outubro",
+        "11": "novembro",
+        "12": "dezembro",
     }
-    var data = t[0] + mes + t[2];
-    if (strDate === "") {
-        return "";
-    } else {
-        return data;
-    }
-     }
+
+    return day && month && year ? `${day} de ${monthText[month]} de ${year}` : ""
+}
+
 
     
 
