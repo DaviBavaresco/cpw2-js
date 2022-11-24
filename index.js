@@ -107,7 +107,7 @@ function wide(strDate){
     } else {
         return data;
     }
-    }
+     }
 
     
 
